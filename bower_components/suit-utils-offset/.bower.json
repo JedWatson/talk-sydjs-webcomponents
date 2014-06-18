@@ -1,0 +1,24 @@
+{
+  "name": "suit-utils-offset",
+  "version": "0.4.2",
+  "author": "Nicolas Gallagher",
+  "dependencies": {
+    "suit-utils-before": "0.2.x",
+    "suit-utils-after": "0.2.x"
+  },
+  "ignore": [
+    ".*",
+    "CHANGELOG.md",
+    "component.json"
+  ],
+  "homepage": "https://github.com/suitcss/utils-offset",
+  "_release": "0.4.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.4.2",
+    "commit": "90997e7083cdd7b70fefe6d600b51496c4573f66"
+  },
+  "_source": "git://github.com/suitcss/utils-offset.git",
+  "_target": "~0.4.2",
+  "_originalSource": "suit-utils-offset"
+}

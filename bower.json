@@ -1,0 +1,23 @@
+{
+  "name": "playground",
+  "version": "0.0.0",
+  "authors": [
+    "Jed Watson <jed.watson@me.com>"
+  ],
+  "description": "Playground for my @sydjs web components talk",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.3.2",
+    "pure": "~0.5.0",
+    "suit": "~0.4.0",
+    "core-ajax": "Polymer/core-ajax#~0.3.2"
+  }
+}

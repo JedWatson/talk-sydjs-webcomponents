@@ -1,0 +1,19 @@
+{
+  "name": "rsvp-button",
+  "description": "RSVP Button",
+  "version": "0.0.1",
+  "dependencies": {
+    "visionmedia/superagent": "~0.18.0",
+    "component/dom": "^1.0.5",
+    "suitcss/suit": "~0.4.0"
+  },
+  "scripts": [
+    "index.js"
+  ],
+  "styles": [
+    "styles.css"
+  ],
+  "templates": [
+    "template.html"
+  ]
+}

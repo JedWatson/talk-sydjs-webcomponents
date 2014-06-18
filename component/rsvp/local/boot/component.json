@@ -1,0 +1,16 @@
+{
+  "name": "boot",
+  "dependencies": {
+    "njpatel/pure": "*",
+    "suitcss/suit": "~0.4.0"
+  },
+  "local": [
+    "rsvp-button"
+  ],
+  "scripts": [
+    "index.js"
+  ],
+  "styles": [
+    "styles.css"
+  ]
+}

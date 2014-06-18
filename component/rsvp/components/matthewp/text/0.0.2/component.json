@@ -1,0 +1,13 @@
+{
+  "name": "text",
+  "description": "Cross-browser DOM text manipulation",
+  "version": "0.0.2",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "scripts": [
+    "index.js"
+  ],
+  "license": "MIT",
+  "repository": "matthewp/text"
+}

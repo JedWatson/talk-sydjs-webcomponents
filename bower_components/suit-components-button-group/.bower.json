@@ -1,0 +1,33 @@
+{
+  "name": "suit-button-group",
+  "version": "2.1.0",
+  "author": "Nicolas Gallagher",
+  "main": [
+    "button-group.css",
+    "button-group.plugin.css"
+  ],
+  "dependencies": {
+    "suit-components-button": "*"
+  },
+  "ignore": [
+    "build",
+    "components",
+    "test",
+    ".*",
+    "Makefile",
+    "CHANGELOG.md",
+    "component.json",
+    "package.json",
+    "test.html"
+  ],
+  "homepage": "https://github.com/suitcss/components-button-group",
+  "_release": "2.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "2.1.0",
+    "commit": "f7c5d3ecb820cff9ac33259ea6a06cccfd56044c"
+  },
+  "_source": "git://github.com/suitcss/components-button-group.git",
+  "_target": "~2.1.0",
+  "_originalSource": "suit-components-button-group"
+}

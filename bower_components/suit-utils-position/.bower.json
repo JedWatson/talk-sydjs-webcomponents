@@ -1,0 +1,29 @@
+{
+  "name": "suit-utils-position",
+  "description": "Positioning utilities for SUIT CSS",
+  "version": "0.1.0",
+  "main": "position.css",
+  "devDependencies": {
+    "suit-test": "*"
+  },
+  "ignore": [
+    "build",
+    "components",
+    "test",
+    ".*",
+    "CHANGELOG.md",
+    "component.json",
+    "package.json",
+    "test.html"
+  ],
+  "homepage": "https://github.com/suitcss/utils-position",
+  "_release": "0.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.0",
+    "commit": "4509d5420f82aa0adcec88f695eab32f1d6bc458"
+  },
+  "_source": "git://github.com/suitcss/utils-position.git",
+  "_target": "~0.1.0",
+  "_originalSource": "suit-utils-position"
+}

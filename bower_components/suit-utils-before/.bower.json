@@ -1,0 +1,28 @@
+{
+  "name": "suit-utils-before",
+  "version": "0.2.2",
+  "author": "Nicolas Gallagher",
+  "main": [
+    "before.css",
+    "before-sm.css",
+    "before-md.css",
+    "before-lg.css"
+  ],
+  "ignore": [
+    ".*",
+    "CHANGELOG.md",
+    "component.json",
+    "package.json",
+    "test.html"
+  ],
+  "homepage": "https://github.com/suitcss/utils-before",
+  "_release": "0.2.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.2.2",
+    "commit": "e3cc7f7c882b937f117fa8a5799a106124f64d24"
+  },
+  "_source": "git://github.com/suitcss/utils-before.git",
+  "_target": "0.2.x",
+  "_originalSource": "suit-utils-before"
+}

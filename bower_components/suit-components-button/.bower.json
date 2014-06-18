@@ -1,0 +1,23 @@
+{
+  "name": "suit-components-button",
+  "version": "3.1.0",
+  "author": "Nicolas Gallagher",
+  "main": "button.css",
+  "ignore": [
+    ".*",
+    "CHANGELOG.md",
+    "component.json",
+    "package.json",
+    "test.html"
+  ],
+  "homepage": "https://github.com/suitcss/components-button",
+  "_release": "3.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "3.1.0",
+    "commit": "05dbc357cf1500e7b0331c2c23a2eb2a7dd26c72"
+  },
+  "_source": "git://github.com/suitcss/components-button.git",
+  "_target": "~3.1.0",
+  "_originalSource": "suit-components-button"
+}

@@ -1,0 +1,32 @@
+{
+  "name": "suit-base",
+  "version": "0.4.0",
+  "author": "Nicolas Gallagher",
+  "main": "base.css",
+  "dependencies": {
+    "normalize-css": "3.0.x"
+  },
+  "devDependencies": {
+    "suit-test": "*"
+  },
+  "ignore": [
+    "build",
+    "components",
+    "test",
+    ".*",
+    "CHANGELOG.md",
+    "component.json",
+    "package.json",
+    "test.html"
+  ],
+  "homepage": "https://github.com/suitcss/base",
+  "_release": "0.4.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.4.0",
+    "commit": "def158aa3d773db2ac9677e183d95fb31dd13566"
+  },
+  "_source": "git://github.com/suitcss/base.git",
+  "_target": "~0.4.0",
+  "_originalSource": "suit-base"
+}

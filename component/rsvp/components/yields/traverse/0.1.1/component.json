@@ -1,0 +1,24 @@
+{
+  "name": "traverse",
+  "description": "low level traverse function, inspired by $.dir.",
+  "version": "0.1.1",
+  "keywords": [
+    "traverse",
+    "dir"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ],
+  "dependencies": {
+    "component/matches-selector": "*"
+  },
+  "development": {
+    "dependencies": {
+      "visionmedia/mocha": "*",
+      "component/assert": "*"
+    }
+  },
+  "repository": "yields/traverse"
+}

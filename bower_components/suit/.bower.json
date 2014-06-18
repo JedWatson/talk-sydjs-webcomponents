@@ -1,0 +1,34 @@
+{
+  "name": "suit",
+  "version": "0.4.0",
+  "author": "Nicolas Gallagher",
+  "dependencies": {
+    "suit-base": "~0.4.0",
+    "suit-utils": "~0.8.0",
+    "suit-components-arrange": "~0.3.0",
+    "suit-components-button": "~3.1.0",
+    "suit-components-button-group": "~2.1.0",
+    "suit-components-flex-embed": "~1.5.1",
+    "suit-components-grid": "~1.2.0"
+  },
+  "ignore": [
+    "build",
+    "components",
+    "test",
+    ".*",
+    "CHANGELOG.md",
+    "component.json",
+    "package.json",
+    "test.html"
+  ],
+  "homepage": "https://github.com/suitcss/suit",
+  "_release": "0.4.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.4.0",
+    "commit": "3c5009bd8ec86a8325d1a248f4cf8c74d1b0ab2e"
+  },
+  "_source": "git://github.com/suitcss/suit.git",
+  "_target": "~0.4.0",
+  "_originalSource": "suit"
+}

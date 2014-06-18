@@ -1,0 +1,28 @@
+{
+  "name": "suit-utils-after",
+  "version": "0.2.2",
+  "author": "Nicolas Gallagher",
+  "main": [
+    "after.css",
+    "after-sm.css",
+    "after-md.css",
+    "after-lg.css"
+  ],
+  "ignore": [
+    ".*",
+    "CHANGELOG.md",
+    "component.json",
+    "package.json",
+    "test.html"
+  ],
+  "homepage": "https://github.com/suitcss/utils-after",
+  "_release": "0.2.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.2.2",
+    "commit": "b074285b14b0cb5481def94664544e934cca1c8d"
+  },
+  "_source": "git://github.com/suitcss/utils-after.git",
+  "_target": "0.2.x",
+  "_originalSource": "suit-utils-after"
+}

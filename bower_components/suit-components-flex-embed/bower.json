@@ -1,0 +1,17 @@
+{
+  "name": "suit-components-flex-embed",
+  "version": "1.5.1",
+  "author": "Nicolas Gallagher",
+  "main": "flex-embed.css",
+  "ignore": [
+    "build",
+    "components",
+    "test",
+    ".*",
+    "Makefile",
+    "CHANGELOG.md",
+    "component.json",
+    "package.json",
+    "test.html"
+  ]
+}

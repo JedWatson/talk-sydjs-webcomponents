@@ -1,0 +1,16 @@
+{
+  "name": "suit-utils",
+  "version": "0.8.0",
+  "author": "Nicolas Gallagher",
+  "dependencies": {
+    "suit-utils-align": "~0.1.1",
+    "suit-utils-display": "~0.2.4",
+    "suit-utils-layout": "~0.3.0",
+    "suit-utils-link": "~0.3.1",
+    "suit-utils-offset": "~0.4.2",
+    "suit-utils-position": "~0.1.0",
+    "suit-utils-size": "~0.6.2",
+    "suit-utils-state": "~0.3.0",
+    "suit-utils-text": "~0.3.0"
+  }
+}

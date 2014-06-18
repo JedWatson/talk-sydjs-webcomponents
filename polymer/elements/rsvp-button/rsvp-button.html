@@ -1,0 +1,37 @@
+<link rel="import" href="/bower_components/polymer/polymer.html">
+<link rel="import" href="/bower_components/core-ajax/core-ajax.html">
+
+<link rel="stylesheet" type="text/css" href="rsvp-button.css">
+
+<polymer-element name="rsvp-button" noscript>
+  <template><div class="Rsvp-Button">
+    
+    <core-ajax id="ajax_whoami" url="/api/whoami" handleAs="json" response="{{resp}}"></core-ajax>
+    <core-ajax id="ajax_signin" url="/api/signin" handleAs="json" response="{{resp}}"></core-ajax>
+    <core-ajax id="ajax_rsvp_check" url="/api/rsvp/check" handleAs="json" response="{{resp}}"></core-ajax>
+    <core-ajax id="ajax_rsvp_yes" url="/api/rsvp/true" handleAs="json" response="{{resp}}"></core-ajax>
+    <core-ajax id="ajax_rsvp_no" url="/api/rsvp/false" handleAs="json" response="{{resp}}"></core-ajax>
+    
+    <div class="rsvp-button">
+      <p>Not Red</p>
+      <div>
+        <style scoped>
+         p { color: red; }
+        </style>
+        <p>Red</p>
+      <div>
+      <div id="loading" class="rsvp-button--loading">...</div>
+      <div id="btn_register" on-click="{{signin}}" class="pure-button pure-button-block">Register to RSVP</div>
+      <div id="btns_yesno" class="pure-g">
+        <div class="pure-u-1-2">
+          <button id="btn_yes" on-click="{{rsvpYes}}" class="pure-button pure-button-block {{rsvp_yes_class}}">Yes</button>
+        </div>
+        <div class="pure-u-1-2">
+          <button id="btn_no" on-click="{{rsvpNo}}" class="pure-button pure-button-block {{rsvp_no_class}}">No</button>
+        </div>
+      </div>
+    </div>
+    
+  </div></template>
+  <script src="rsvp-button.js"></script>
+</polymer-element>

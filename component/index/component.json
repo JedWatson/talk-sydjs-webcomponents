@@ -1,0 +1,13 @@
+{
+  "name": "component-playground",
+  "dependencies": {
+    "visionmedia/superagent": "~0.18.0",
+    "njpatel/pure": "*"
+  },
+  "scripts": [
+    "app/index.js"
+  ],
+  "styles": [
+    "app/index.css"
+  ]
+}

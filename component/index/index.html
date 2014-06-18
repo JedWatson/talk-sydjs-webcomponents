@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>Component • Web Components @SydJS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- All the required stylesheets are built into build.css -->
+    <link rel="stylesheet" href="/component/index/build/build.css">
+    
+  </head>
+  <body>
+    
+    <!-- standard header -->
+    <div class="header-wrap">
+      <div class="header">
+        <div class="pure-menu pure-menu-open pure-menu-horizontal">
+          <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/polymer">Polymer</a></li>
+              <li class="pure-menu-selected"><a href="/component">Component</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <!-- add the html elements your app will attach to into the page -->
+    <div class="content-wrap">
+      <div class="content">
+        <h1>Component</h1>
+        <p>Server timestamp: <span id="timestamp"></span></p>
+        <p><a href="/component/rsvp">RSVP Button Demo</a></p>
+      </div>
+    </div>
+    
+    <!-- all dependencies and scripts are built into build.js -->
+    <script src="/component/index/build/build.js"></script>
+    
+  </body>
+</html>

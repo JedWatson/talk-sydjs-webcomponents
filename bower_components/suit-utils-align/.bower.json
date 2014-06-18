@@ -1,0 +1,29 @@
+{
+  "name": "suit-utils-align",
+  "description": "Vertical alignment utilities for SUIT CSS",
+  "version": "0.1.1",
+  "main": "align.css",
+  "devDependencies": {
+    "suit-test": "*"
+  },
+  "ignore": [
+    "build",
+    "components",
+    "test",
+    ".*",
+    "CHANGELOG.md",
+    "component.json",
+    "package.json",
+    "test.html"
+  ],
+  "homepage": "https://github.com/suitcss/utils-align",
+  "_release": "0.1.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.1",
+    "commit": "2c1349fe9996635b6f504bc9b3bf601bdd7b1852"
+  },
+  "_source": "git://github.com/suitcss/utils-align.git",
+  "_target": "~0.1.1",
+  "_originalSource": "suit-utils-align"
+}

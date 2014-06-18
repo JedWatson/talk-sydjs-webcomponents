@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>Polymer • Web Components @SydJS</title>
+    <link rel="stylesheet" type="text/css" href="/bower_components/pure/pure.css">
+    <link rel="stylesheet" type="text/css" href="/styles/app.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- 1. Load platform.js for polyfill support. -->
+    <script src="/bower_components/platform/platform.js"></script>
+    
+    <!-- 2. Use a HTML Imports to bring elements in -->
+    <link rel="import" href="/bower_components/core-ajax/core-ajax.html">
+    
+  </head>
+  <body>
+    
+    <div class="header-wrap">
+      <div class="header">
+        <div class="pure-menu pure-menu-open pure-menu-horizontal">
+          <ul>
+              <li><a href="/">Home</a></li>
+              <li class="pure-menu-selected"><a href="/polymer">Polymer</a></li>
+              <li><a href="/component">Component</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="content-wrap">
+      <div class="content">
+        <h1>Polymer</h1>
+        <p>Server timestamp: <span id="timestamp"></span></p>
+        <p><a href="/polymer/rsvp">RSVP Button Demo</a></p>
+      </div>
+    </div>  
+    
+    <!-- 3. Declare the element. Configure using its attributes. -->
+    <core-ajax url="/api/ping" handleAs="json"></core-ajax>
+    
+    <!-- 4. Do stuff with it. -->
+    <script>
+      // Wait for 'polymer-ready'. Ensures the element is upgraded.
+      window.addEventListener('polymer-ready', function(e) {
+        
+        var ajax = document.querySelector('core-ajax');
+        
+        // Respond to events it fires.
+        ajax.addEventListener('core-response', function(e) {
+          document.getElementById('timestamp').innerHTML = JSON.stringify(this.response);
+        });
+        
+        ajax.go(); // Call its API methods.
+        
+      });
+    </script>
+    
+  </body>
+</html>

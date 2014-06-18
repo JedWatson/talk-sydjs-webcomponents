@@ -1,0 +1,60 @@
+/* Common Styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica;
+}
+
+a, a:hover, a:visited { color: #3f99db; }
+
+/* Pure Styles Override */
+
+.pure-menu {
+  background: transparent !important;
+}
+
+/* Layout */
+
+.header-wrap {
+  background: #3280b7;
+}
+.header {
+  width: 960px;
+  margin: 0 auto;
+  color: white;
+}
+
+.header a, .header a:hover, .header a:visited {
+  color: white;
+}
+
+.header .pure-menu li a:hover, .header .pure-menu li a:focus {
+  background: #146494;
+}
+
+.header .pure-menu-selected {
+  background: #388cc9;
+}
+
+.content {
+  width: 960px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+/* Buttons */
+
+.pure-button-block {
+  width: 100%;
+}
+
+.rsvp-button--loading {
+  display: inline-block;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  color: #999;
+}

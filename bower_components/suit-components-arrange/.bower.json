@@ -1,0 +1,25 @@
+{
+  "name": "suit-components-arrange",
+  "version": "0.3.0",
+  "author": "Nicolas Gallagher",
+  "main": "arrange.css",
+  "ignore": [
+    ".*",
+    "CHANGELOG.md",
+    "component.json",
+    "package.json",
+    "test.html",
+    "build",
+    "components"
+  ],
+  "homepage": "https://github.com/suitcss/components-arrange",
+  "_release": "0.3.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.3.0",
+    "commit": "7fd37644feac02c2f9d51f9bf1b92cfe7c332fd5"
+  },
+  "_source": "git://github.com/suitcss/components-arrange.git",
+  "_target": "~0.3.0",
+  "_originalSource": "suit-components-arrange"
+}
