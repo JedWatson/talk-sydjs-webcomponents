@@ -13,13 +13,6 @@
     <core-ajax id="ajax_rsvp_no" url="/api/rsvp/false" handleAs="json" response="{{resp}}"></core-ajax>
     
     <div class="rsvp-button">
-      <p>Not Red</p>
-      <div>
-        <style scoped>
-         p { color: red; }
-        </style>
-        <p>Red</p>
-      <div>
       <div id="loading" class="rsvp-button--loading">...</div>
       <div id="btn_register" on-click="{{signin}}" class="pure-button pure-button-block">Register to RSVP</div>
       <div id="btns_yesno" class="pure-g">
