@@ -48,7 +48,10 @@ Then install the node modules (which are defined in `./package.json`) by running
 
 	npm install
 
-... from the main folder. This will install [Hapi](http://hapijs.com), and you'll be good to go.
+... from the main folder. You'll also need `bower` and `component` installed globally, which can also be installed from npm:
+
+	npm install -g bower
+	npm install -g component@1.0.0-rc5
 
 To start the web server, run
 
@@ -58,15 +61,32 @@ To start the web server, run
 
 If you're curious, the files for the server can be found in `./server/*`.
 
+When working on the experiments, I used [nodemon](http://nodemon.io) to automatically restart my server when I made changes to the code:
+
+	npm install -g nodemon
+	nodemon server -e js,html
+
 # Polymer
 
 > Web Components usher in a new era of web development based on encapsulated and interoperable custom elements that extend HTML itself. Built atop these new standards, Polymer makes it easier and faster to create anything from a button to a complete application across desktop, mobile, and beyond.
 
-The first experiment (AJAX timestamp request) is basically a copy of the 'getting started' tutorial on the Polymer site.
+### Installation
 
-Polymer, Pure and the `core-ajax` component are required in `./bower.json` and can be installed by running `bower install` from the root project folder.
+`Polymer`, `Pure` and the `core-ajax` polymer element are specified as dependencies in `./bower.json` and must be installed before you can run the experiments.
 
-The code for the page itself is in `./polymer/index.html`.
+To do this, run the following from the project root:
+
+	bower install
+
+### First Experiment - AJAX timestamp request
+
+View it here: [http://localhost:8080](http://localhost:8080)
+
+The first experiment is basically a copy of the 'getting started' tutorial on the Polymer site.
+
+The full source code can be found in `./polymer/index.html`.
+
+### Second Experiment - RSVP Button
 
 For the second experiment, I created a custom Polymer element called &lt;rsvp-button&gt; and invoked it on a simple page.
 
