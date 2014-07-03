@@ -3,7 +3,7 @@ SydJS Web Components Talk
 
 In June, 2014 I gave a talk at [SydJS](http://www.sydjs.com) on web components, and the future of the web.
 
-These are my notes.
+These are my notes. If you like them, you should [follow me on Twitter](https://twitter.com/JedWatson) and [GitHub](https://github.com/JedWatson).
 
 ## The Experiments
 
