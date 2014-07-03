@@ -7,7 +7,7 @@ These are my notes.
 
 ## The Experiments
 
-For the talk, I created two experiments each in two competing takes on building reusable components for the web:
+I created two experiments, each in two competing takes on building reusable components for the web:
 
 * [component(1)](https://github.com/component/component) - client package management for building better web applications
 * [Polymer](http://www.polymer-project.org) - Building blocks for the web
@@ -40,7 +40,7 @@ And the following API Endpoints (`GET` request with no parameters, returns `json
 * `/api/rsvp/false` - Sets RSVP status to `false`
 * `/api/rsvp/clear` - Sets RSVP status to `undefined`
 
-*Note: There is no UI for hitting the `signout` or `rsvp/clear` endpoints; to use these simply visit them in a new browser window.*
+*Note: There is no UI for hitting the `/api/signout` or `/api/rsvp/clear` endpoints; to use these simply visit them in a new browser window.*
 
 # Getting Started
 
