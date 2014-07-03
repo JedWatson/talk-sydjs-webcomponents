@@ -1,16 +1,18 @@
 SydJS Web Components Talk
 =========================
 
-Notes and Resources from my talk on Web Components at [SydJS](http://www.sydjs.com), June 2014
+In June, 2014 I gave a talk at [SydJS](http://www.sydjs.com) on web components, and the future of the web.
 
-## Summary
+These are my notes.
 
-These are the experiments I set up to demonstrate diffrent takes on reusable components for the web:
+## The Experiments
+
+For the talk, I created two experiments each in two competing takes on building reusable components for the web:
 
 * [component(1)](https://github.com/component/component) - client package management for building better web applications
 * [Polymer](http://www.polymer-project.org) - Building blocks for the web
 
-Inspired by (a) [the Polymer getting started guide](http://www.polymer-project.org/docs/start/usingelements.html), and (b) wanting to improve the RSVP button on the [SydJS](http://www.sydjs.com) website (which seemed like a good use-case for a reusable component) I created two demos with functionally identical demos in both component(1) and Polymer:
+My experiments were inspired by (a) [the Polymer getting started guide](http://www.polymer-project.org/docs/start/usingelements.html), and (b) wanting to improve the RSVP button on the [SydJS](http://www.sydjs.com) website (which seemed like a good use-case for a reusable component):
 
 * A simple page that makes an ajax API request to retrieve the current timestamp of the server as JSON and render it to a span element
 * An RSVP button implementation that
@@ -38,7 +40,7 @@ And the following API Endpoints (`GET` request with no parameters, returns `json
 * `/api/rsvp/false` - Sets RSVP status to `false`
 * `/api/rsvp/clear` - Sets RSVP status to `undefined`
 
-There is no UI for hitting the `signout` or `rsvp/clear` endpoints; to use these simply visit them in a new browser window.
+*Note: There is no UI for hitting the `signout` or `rsvp/clear` endpoints; to use these simply visit them in a new browser window.*
 
 # Getting Started
 
@@ -72,7 +74,7 @@ When working on the experiments, I used [nodemon](http://nodemon.io) to automati
 
 Maintained by Google and will be the basis for Angular 2.0; and theoretically available for use today in evergreen browsers thanks to polyfill support. What's not to like?
 
-Turns out, a lot. Unfortunately it's almost impossible to ensure a consistent experience across different browsers while the shadow dom support matures, especially with regards to elemnt styling. And whlie I was preparing the talk, documentation was sketchy at best; it's been improved since (with `0.3.3`, which was released at I/O 2014) but the whole ecosystem it pretty unstable right now.
+Unfortunately, it's almost impossible to ensure a consistent experience across different browsers while the shadow dom support matures, especially with regards to element styling. And whlie I was preparing the talk, documentation was sketchy at best; it's been improved since (with `0.3.3`, which was released at I/O 2014) but the whole ecosystem it pretty unstable right now.
 
 When it *does* mature, though, this is going to be awesome. On with the experiments.
 
@@ -108,17 +110,15 @@ The [Polymer Website](http://www.polymer-project.org/) has some great resources 
 
 [Understanding Polymer](http://www.polymer-project.org/docs/start/everything.html) is also a great place to start.
 
-### Production Use
+Officially, Polymer isn't really ready for production use yet, but if that isn't going to stop you (and browser support for IE 9 or lower isn't a thing) probably the biggest thing to be across is using [Vulcanize](http://www.polymer-project.org/articles/concatenating-web-components.html) to build all your dependencies into a single import. Without this, each component is going to make a bunch of web requests and really slow down your page / app.
 
-Officially, Polymer isn't really ready for broad use yet, but if that isn't going to stop you (and browser support for IE 9 or lower isn't a thing for you) probably the biggest thing you'll want to be across is how to use [Vulcanize](http://www.polymer-project.org/articles/concatenating-web-components.html) to build all your dependencies into a single import. Without this, each component is going to make a bunch of web requests and really slow down your page / app.
+Performance is a concern with Polymer, as you can see on the simple Ajax Request experiment, where there's a noticible delay before the platform is initialised, that isn't present in the component(1) version.
 
-Performance is currently the biggest issue with Polymer, as you can see on the simple Ajax Request experiment, where there's a noticible delay before the platform is initialised, which isn't present in the component(1) version.
-
-[Styling Polymer Elements](http://www.polymer-project.org/articles/styling-elements.html) is also a fairly important thing to understand; especially the implications of whether there is proper shadow dom support in the browser or not, as this fundamentally changes the way that a component's CSS will interact with the page it's in (and vice versa).
+[Styling Polymer Elements](http://www.polymer-project.org/articles/styling-elements.html) is also a very important thing to understand; especially the implications of whether there is proper shadow dom support in the browser or not, as this fundamentally changes the way that a component's CSS will interact with the page it's in (and vice versa).
 
 If you view [this example](http://www.polymer-project.org/articles/styling-elements.html#style-distributed) in both Chrome (v35) and Firefox (v30) you'll see the issue - Chrome supports the shadow dom at that version but Firefox doesn't, so the same styling rules have completely different effects.
 
-Until this is either resolved or a better polyfill is provided that works around this, be *really* careful with it. It's probably the biggest thing currently holding me back from using Polymer in the real world, and I personally of wish they'd go with a more compatible middle-ground until the implementations catch up with how the shadow dom is supposed to behave.
+Until this is either resolved or a better polyfill is provided to works around it, be *really* careful with your styling. It's probably the biggest thing currently holding me back from using Polymer in the real world, and I personally of wish they'd go with a more compatible middle-ground until the implementations catch up with how the shadow dom is supposed to behave.
 
 # Component(1)
 
